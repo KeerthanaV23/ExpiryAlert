@@ -10,8 +10,8 @@ function Login({ onLogin }) {
     e.preventDefault();
 
     const url = isRegister
-      ? "http://127.0.0.1:8000/api/auth/register/"
-      : "http://127.0.0.1:8000/api/auth/login/";
+      ? "https://expiryalert-backend.onrender.com/api/auth/register/"
+      : "https://expiryalert-backend.onrender.com/api/auth/login/";
 
     try {
       const response = await fetch(url, {

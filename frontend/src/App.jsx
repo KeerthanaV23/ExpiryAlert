@@ -43,7 +43,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/auth/token/refresh/",
+        "https://expiryalert-backend.onrender.com/api/auth/token/refresh/",
         {
           method: "POST",
           headers: {
@@ -97,7 +97,7 @@ function App() {
 
     try {
       let response = await fetch(
-        "http://127.0.0.1:8000/api/products/",
+        "https://expiryalert-backend.onrender.com/api/products/",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -116,7 +116,7 @@ function App() {
 
         // Try again with new access token
         response = await fetch(
-          "http://127.0.0.1:8000/api/products/",
+          "https://expiryalert-backend.onrender.com/api/products/",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -180,7 +180,7 @@ function App() {
 
     try {
       let response = await fetch(
-        "http://127.0.0.1:8000/api/products/",
+        "https://expiryalert-backend.onrender.com/api/products/",
         {
           method: "POST",
           headers: {
@@ -201,7 +201,7 @@ function App() {
 
         // Try POST again with refreshed token
         response = await fetch(
-          "http://127.0.0.1:8000/api/products/",
+          "https://expiryalert-backend.onrender.com/api/products/",
           {
             method: "POST",
             headers: {
@@ -326,7 +326,7 @@ function App() {
 
     try {
       let response = await fetch(
-        `http://127.0.0.1:8000/api/products/${id}/`,
+        `https://expiryalert-backend.onrender.com/api/products/${id}/`,
         {
           method: "DELETE",
           headers: {
@@ -345,7 +345,7 @@ function App() {
         }
 
         response = await fetch(
-          `http://127.0.0.1:8000/api/products/${id}/`,
+          `https://expiryalert-backend.onrender.com/api/products/${id}/`,
           {
             method: "DELETE",
             headers: {
@@ -395,7 +395,7 @@ function App() {
 
     try {
       let response = await fetch(
-        `http://127.0.0.1:8000/api/products/${product.id}/`,
+        `https://expiryalert-backend.onrender.com/api/products/${product.id}/`,
         {
           method: "PATCH",
           headers: {
@@ -418,7 +418,7 @@ function App() {
         }
 
         response = await fetch(
-          `http://127.0.0.1:8000/api/products/${product.id}/`,
+          `https://expiryalert-backend.onrender.com/api/products/${product.id}/`,
           {
             method: "PATCH",
             headers: {
